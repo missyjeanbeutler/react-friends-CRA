@@ -36,7 +36,6 @@ class FriendsList extends Component {
                         pitureUrl={friend.pic_square}
                         status={friend.status ? friend.status.message : ''}
                     />
-
         });
 
         const displayFriends = this.state.order === 'ascending' ? friendsList : friendsList.slice().reverse();
@@ -61,7 +60,7 @@ class FriendsList extends Component {
                     </div>
                 </form>
                 <ul>
-                    {friendsList}
+                    {displayFriends}
                 </ul>
             </div> 
 
